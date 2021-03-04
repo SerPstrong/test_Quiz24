@@ -1,0 +1,28 @@
+@import "normalize";
+@import "variables";
+
+.container {
+  max-width: 1212px;
+  margin: 0 auto;
+}
+
+.header {
+  &__block_flex {
+    display: flex;
+  }
+  &__flex {
+    display: flex;
+  }
+  &__text_p {
+    max-width: 2600px;
+  }
+}
+
+.phone__text_span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(50% 50% at 50% 50%, #45FF58 0%, #188A24 100%);
+  border-radius: 50%;
+}
+
