@@ -1,70 +1,32 @@
-@import "normalize";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');@import "normalize";
 @import "variables";
+@import "header";
+@import "main-block";
+@import "comp-block";
+@import "progress";
+@import "footer";
+
+@font-face {
+  font-family: MSC;
+  src: url("../fonts/MuseoSansCyrl.otf");
+}
+
+p, ul, h2 {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  font-family: sans-serif;
+  font-family: MSC, sans-serif;
+  background-image: url("../img/footer.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
+
 
 .container {
   max-width: 1212px;
   margin: 0 auto;
 }
 
-.header {
-  &__block {
-    margin: 47px 0 0 0;
-  }
 
-  &__block_flex {
-    display: flex;
-    align-items: center;
-  }
-
-  &__flex {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__text_p {
-    max-width: 260px;
-    font-family: Museo Sans Cyrillic;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 18px;
-    color: #000000;
-    opacity: 0.8;
-    margin: 0 0 0 25px;
-  }
-}
-
-.phone {
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
-  align-items: flex-end;
-
-  &__text {
-    margin: 0 0 0 0;
-  }
-
-  &__text_boll {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(50% 50% at 50% 50%, #45FF58 0%, #188A24 100%);
-    border-radius: 50%;
-    position: relative;
-    top: 1px;
-    right: 10px;
-  }
-  &__numb {
-    font-family: Museo Sans Cyrillic;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    color: #000000;
-    margin: 0 0 0 0;
-  }
-}
