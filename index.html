@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
 </head>
 <body>
 
@@ -121,10 +122,11 @@
 
                         <p>Введите номер телефона и получите расчет кухни в 3-х комплектациях</p>
 
-                        <div class="tel__input">
+                        <div class="tel__input imaskjs__input_tel">
                             <label for="tel"></label>
 
-                            <input name="tel" id="tel" type="tel" placeholder="_(___)___-__-__" required>
+                            <input class="imaskjs__input_tel" name="tel" id="tel" type="tel"
+                                   placeholder="_(___)___-__-__" required>
 
 
                             <input type="submit" value="получить результат">
@@ -133,24 +135,14 @@
 
 
                     <div class="circle">
-
-
-                        <div class="ko-progress-circle" data-progress="0">
-                            <div class="ko-circle">
-                                <div class="full ko-progress-circle__slice">
-                                    <div class="ko-progress-circle__fill"></div>
-                                </div>
-                                <div class="ko-progress-circle__slice">
-                                    <div class="ko-progress-circle__fill"></div>
-
-                                    <div class="ko-progress-circle__fill ko-progress-circle__bar"></div>
-                                </div>
-                            </div>
-                            <div class="ko-progress-circle__overlay"></div>
-
-                        </div>
-                        <span id="value-cross"></span>
-
+                        <span class="vl">0</span>
+                        <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <circle id="circle" class="circle_animation" r="49.85699" cy="81" cx="81"
+                                        stroke-width="12" stroke="#ffc804"
+                                        fill="none"/>
+                            </g>
+                        </svg>
                     </div>
 
 
