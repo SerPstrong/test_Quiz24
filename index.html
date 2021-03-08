@@ -95,28 +95,23 @@
                         <span class="result__text_span">Как вам удобнее получить результат?</span>
                     </h2>
 
-                    <form action="#" method="post">
+                    <form action="php/mail_handler.php" method="post">
                         <div class="form">
                             <div class="form_radio">
-                                <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                <input id="radio-1" type="radio" name="radio" value="Пришлите расчет в WhatsApp" checked>
                                 <label for="radio-1">Пришлите расчет в <span
                                         class="result__text_span">WhatsApp</span></label>
                             </div>
 
                             <div class="form_radio">
-                                <input id="radio-2" type="radio" name="radio" value="2">
+                                <input id="radio-2" type="radio" name="radio" value="Пришлите расчет ссылкой в SMS">
                                 <label for="radio-2">Пришлите расчет ссылкой в <span
                                         class="result__text_span">SMS</span></label>
                             </div>
 
                             <div class="form_radio">
-                                <input id="radio-3" type="radio" name="radio" value="3">
+                                <input id="radio-3" type="radio" name="radio" value="Перезвоните, у меня остались вопросы">
                                 <label for="radio-3">Перезвоните, у меня остались вопросы</label>
-                            </div>
-
-                            <div class="form_radio">
-                                <input id="radio-4" type="radio" name="radio" value="4" disabled>
-                                <label for="radio-4">Radio disabled</label>
                             </div>
                         </div>
 
@@ -128,11 +123,9 @@
                             <input class="imaskjs__input_tel" name="tel" id="tel" type="tel"
                                    placeholder="_(___)___-__-__" required>
 
-
-                            <input type="submit" value="получить результат">
+                            <input type="submit" value="получить результат" name="submit">
                         </div>
                     </form>
-
 
                     <div class="circle">
                         <span class="vl">0</span>
@@ -144,7 +137,6 @@
                             </g>
                         </svg>
                     </div>
-
 
                 </div>
                 <div class="surprise">
