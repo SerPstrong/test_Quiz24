@@ -28,4 +28,4 @@ function val() {
     return value.innerHTML = "<img src=\"img/tick.png\" alt=\"tick\">";
 }
 
-setTimeout(val, 3500);
+setTimeout(val, 4000);
