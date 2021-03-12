@@ -11,7 +11,7 @@ setTimeout(function () {
     $('.circle_animation').css('stroke-dashoffset', initialOffset - (1 * (initialOffset / time)));
 
     var interval = setInterval(function () {
-        $('.vl').text(i+"%");
+        $('.vl').text(i + "%");
         if (i === time) {
             clearInterval(interval);
             return;
