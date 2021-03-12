@@ -1,181 +1,185 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test_Quiz24</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
 </head>
+
 <body>
 
-<header class="header">
-    <div class="container">
-        <div class="header__block">
-            <div class="header__flex">
-                <div class="header__block_flex">
-                    <img class="logo" src="img/logo.svg" alt="logo">
-                    <div class="header__text">
-                        <p class="header__text_p">
-                            Изготавливаем и устанавливаем кухни в Москве и области с 2004 года
-                        </p>
+    <header class="header">
+        <div class="container">
+            <div class="header__block">
+                <div class="header__flex">
+                    <div class="header__block_flex">
+                        <img class="logo" src="img/logo.svg" alt="logo">
+                        <div class="header__text">
+                            <p class="header__text_p">
+                                Изготавливаем и устанавливаем кухни в Москве и области с 2004 года
+                            </p>
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <p class="phone__numb">+7 (995) 508-51-17</p>
+                        <p class="phone__text"><span class="phone__text_boll"></span>сейчас работаем</p>
                     </div>
                 </div>
-                <div class="phone">
-                    <p class="phone__numb">+7 (995) 508-51-17</p>
-                    <p class="phone__text"><span class="phone__text_boll"></span>сейчас работаем</p>
-                </div>
             </div>
         </div>
-    </div>
-</header>
+    </header>
 
-<main>
+    <main>
 
-    <div class="main__block container">
-        <div class="">
+        <div class="main__block container">
+            <div class="">
 
-            <h1>
-                <p class="heading">Современные Комфортные Кухни </p>
-                <p class="heading heading_color">с пожизненной гарантией</p>
-            </h1>
+                <h1>
+                    <p class="heading">Современные Комфортные Кухни </p>
+                    <p class="heading heading_color">с пожизненной гарантией</p>
+                </h1>
 
-            <h2>Тренды дизайна кухни 2020 г.</h2>
-            <div class="main__block_flex">
-                <div class="img__block">
-                    <img src="img/photo.jpg" alt="photo" class="img__photo">
-                </div>
-                <div class="block_text">
-                    <p class="big__text">Максимальное использование пространства и простота в уходе</p>
-                    <ul class="small__text">
-                        <li class="small__text_li">Гладкие, ровные поверхности без ручек</li>
-                        <li class="small__text_li">«Умные»‎ материалы фасадов — нет отпечатков и царапин</li>
-                    </ul>
-                </div>
-            </div>
-
-            <p class="action">
-                <span>Акция!</span>В честь 16-летия фабрики Скидки до 30% до 5 октября
-            </p>
-
-            <p class="calculation">
-                Рассчитайте стоимость вашей кухни в 3-х комплектациях: «Эксклюзивная», «Богатая» и «Хорошая» — и
-                зафиксируйте <span>цену по акции</span>
-            </p>
-
-            <a class="btn" href="#">
-                <p>Рассчитайте стоимость</p>
-                <p class="btn__small">за 2 минуты</p>
-            </a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="comp__block">
-            <h3 class="comp__block_h3">
-                Рассчитайте стоимость вашей кухни в 3-х комплектациях:
-                <p>«Эксклюзивная», «Богатая» и «Хорошая»</p>
-            </h3>
-
-            <div class="progress">
-                <div class="progress-bar blue stripes">
-                    <span style="width: 50%">3 из 6</span>
-                </div>
-            </div>
-
-            <h3 class="calc_price">Мы уже приступили к расчёту стоимости кухни!</h3>
-
-            <div class="result">
-                <div class="result__form">
-
-                    <h2 class="result__text">
-                        <span class="result__text_span">Как вам удобнее получить результат?</span>
-                    </h2>
-
-                    <form action="php/mail_handler.php" method="post">
-                        <div class="form">
-                            <div class="form_radio">
-                                <input id="radio-1" type="radio" name="radio" value="Пришлите расчет в WhatsApp" checked>
-                                <label for="radio-1">Пришлите расчет в <span
-                                        class="result__text_span">WhatsApp</span></label>
-                            </div>
-
-                            <div class="form_radio">
-                                <input id="radio-2" type="radio" name="radio" value="Пришлите расчет ссылкой в SMS">
-                                <label for="radio-2">Пришлите расчет ссылкой в <span
-                                        class="result__text_span">SMS</span></label>
-                            </div>
-
-                            <div class="form_radio">
-                                <input id="radio-3" type="radio" name="radio" value="Перезвоните, у меня остались вопросы">
-                                <label for="radio-3">Перезвоните, у меня остались вопросы</label>
-                            </div>
-                        </div>
-
-                        <p>Введите номер телефона и получите расчет кухни в 3-х комплектациях</p>
-
-                        <div class="tel__input imaskjs__input_tel">
-                            <label for="tel"></label>
-
-                            <input class="imaskjs__input_tel" name="tel" id="tel" type="tel"
-                                   placeholder="_(___)___-__-__" required>
-
-                            <input type="submit" value="получить результат" name="submit">
-                        </div>
-                    </form>
-
-                    <div class="circle">
-                        <span class="vl">0</span>
-                        <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <circle id="circle" class="circle_animation" r="49.85699" cy="81" cx="81"
-                                        stroke-width="12" stroke="#ffc804"
-                                        fill="none"/>
-                            </g>
-                        </svg>
+                <h2>Тренды дизайна кухни 2020 г.</h2>
+                <div class="main__block_flex">
+                    <div class="img__block">
+                        <img src="img/photo.jpg" alt="photo" class="img__photo">
                     </div>
-
+                    <div class="block_text">
+                        <p class="big__text">Максимальное использование пространства и простота в уходе</p>
+                        <ul class="small__text">
+                            <li class="small__text_li">Гладкие, ровные поверхности без ручек</li>
+                            <li class="small__text_li">«Умные»‎ материалы фасадов — нет отпечатков и царапин</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="surprise">
-                    <img src="img/surprise.png" alt="сюрприз">
-                </div>
 
-            </div>
-            <h2 class="h2">Стоимость кухни в 3-х комплектациях сформирована.
-                <p><span>Она откроется сразу после регистрации</span></p>
-            </h2>
-
-            <div class="main__footer">
-                <div class="left__text">
-                    политика конфиденциальности
-                </div>
-                <div class="right__text">
-                    Разработано в Quiz24.ru
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</main>
-
-<footer>
-    <div class="container">
-        <div class="footer__block">
-            <div class="footer__block_flex">
-                <img src="img/lock.svg" alt="">
-                <p class="footer__block_p">
-                    Стоимость кухни в 3-х комплектациях
+                <p class="action">
+                    <span>Акция!</span>В честь 16-летия фабрики Скидки до 30% до 5 октября
                 </p>
+
+                <p class="calculation">
+                    Рассчитайте стоимость вашей кухни в 3-х комплектациях: «Эксклюзивная», «Богатая» и «Хорошая» — и
+                    зафиксируйте <span>цену по акции</span>
+                </p>
+
+                <a class="btn" href="#">
+                    <p>Рассчитайте стоимость</p>
+                    <p class="btn__small">за 2 минуты</p>
+                </a>
             </div>
         </div>
-    </div>
-</footer>
 
-<script src="js/script.js"></script>
+        <div class="container">
+            <div class="comp__block">
+                <h3 class="comp__block_h3">
+                    Рассчитайте стоимость вашей кухни в 3-х комплектациях:
+                    <p>«Эксклюзивная», «Богатая» и «Хорошая»</p>
+                </h3>
+
+                <div class="progress">
+                    <div class="progress-bar blue stripes">
+                        <span style="width: 50%">3 из 6</span>
+                    </div>
+                </div>
+
+                <h3 class="calc_price">Мы уже приступили к расчёту стоимости кухни!</h3>
+
+                <div class="result">
+                    <div class="result__form">
+
+                        <h2 class="result__text">
+                            <span class="result__text_span">Как вам удобнее получить результат?</span>
+                        </h2>
+
+                        <form action="php/mail_handler.php" method="post">
+                            <div class="form">
+                                <div class="form_radio">
+                                    <input id="radio-1" type="radio" name="radio" value="Пришлите расчет в WhatsApp"
+                                        checked>
+                                    <label for="radio-1">Пришлите расчет в <span
+                                            class="result__text_span">WhatsApp</span></label>
+                                </div>
+
+                                <div class="form_radio">
+                                    <input id="radio-2" type="radio" name="radio" value="Пришлите расчет ссылкой в SMS">
+                                    <label for="radio-2">Пришлите расчет ссылкой в <span
+                                            class="result__text_span">SMS</span></label>
+                                </div>
+
+                                <div class="form_radio">
+                                    <input id="radio-3" type="radio" name="radio"
+                                        value="Перезвоните, у меня остались вопросы">
+                                    <label for="radio-3">Перезвоните, у меня остались вопросы</label>
+                                </div>
+                            </div>
+
+                            <p>Введите номер телефона и получите расчет кухни в 3-х комплектациях</p>
+
+                            <div class="tel__input imaskjs__input_tel">
+                                <label for="tel"></label>
+
+                                <input class="imaskjs__input_tel" name="tel" id="tel" type="tel"
+                                    placeholder="_(___)___-__-__" required>
+
+                                <input type="submit" value="получить результат" name="submit">
+                            </div>
+                        </form>
+
+                        <div class="circle">
+                            <span class="vl">0</span>
+                            <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <circle id="circle" class="circle_animation" r="49.85699" cy="81" cx="81"
+                                        stroke-width="12" stroke="#ffc804" fill="none" />
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                    <div class="surprise">
+                        <img src="img/surprise.png" alt="сюрприз">
+                    </div>
+
+                </div>
+                <h2 class="h2">Стоимость кухни в 3-х комплектациях сформирована.
+                    <p><span>Она откроется сразу после регистрации</span></p>
+                </h2>
+
+                <div class="main__footer">
+                    <div class="left__text">
+                        политика конфиденциальности
+                    </div>
+                    <div class="right__text">
+                        Разработано в Quiz24.ru
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__block">
+                <div class="footer__block_flex">
+                    <img src="img/lock.svg" alt="">
+                    <p class="footer__block_p">
+                        Стоимость кухни в 3-х комплектациях
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
